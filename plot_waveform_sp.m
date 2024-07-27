@@ -25,11 +25,11 @@ for i = 1:16
     subplot(8,2,i);
     plot_idx = max_chan+offset+i;
     if plot_idx>0 && plot_idx<size(wv,1)
-        plot(wv(plot_idx,:)); 
+        plot(wv(plot_idx,:),'k-','LineWidth',2); 
     end
     ylim([-max_amp max_amp]);
     axis off;
-    title(sprintf('%d',plot_idx));
+%     title(sprintf('%d',plot_idx));
 end
 
 end
